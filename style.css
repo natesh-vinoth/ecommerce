@@ -2,7 +2,7 @@
 {
     margin-top: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    height: 2000px; 
+    height: 1980px; 
     background-color: white;
 }
 .navbar a
@@ -16,15 +16,38 @@
 body
 {
     background-image: url("images/background.jpg");
+    height: 1995px
 }
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
 
 
 
 @media screen and (max-width : 600px)
 {
+    body
+    {
+        height: 4710px;
+    }
     .container
     {
         width: 400px;
-        height: 3950px;
+        height: 4680px;
+    }
+    .l1
+    {
+        display: none;
     }
 }

@@ -1,160 +1,214 @@
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="boot/css/bootstrap.css">
-        <link rel="stylesheet" href="fa/css/all.css">
-        <link rel="stylesheet" href="style.css">
-        <script src="boot/js/jquery.min.js"></script>
-        <script src="boot/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <div class="container">
-            
-                <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand" href="#">
-                        <img src="images/logo.png">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="boot/css/bootstrap.css">
+    <link rel="stylesheet" href="fa/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="boot/js/jquery.min.js"></script>
+    <script src="boot/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png">
+            </a>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home mr-2"></i> Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-cog mr-2"></i> About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-laptop mr-2"></i> Products</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="far fa-address-book mr-2"></i> Contacts</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li>
+                        <a href="#"> <i class="fa fa-search mr-3"></i> </a>
+                    </li>
+
+                    <li>
+                        <a href="#"> <i class="fa fa-user mr-3"></i> </a>
+                    </li>
+
+                    <li>
+                        <a href="#"> <i class="fas fa-shopping-cart mr-3"></i> </a>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <div class="row">
+            <div class="col-md-3 mt-3">
+                <ul class="list-group">
+                    <li class="list-group-item active"> <i class="fas fa-bars"></i> CATEGORIES </li>
+                    <li class="list-group-item"> <i class="fa fa-user"></i> <a href=""> Mens Fashion </a> </li>
+                    <li class="list-group-item"> <i class="fas fa-child"></i> <a href=""> Computer & Office </a> </li>
+                    <li class="list-group-item"> <i class="fas fa-plug"></i> <a href=""> Auto Mobiles </a> </li>
+                    <li class="list-group-item"> <i class="fas fa-gem"></i> <a href=""> Jewelry & Watches </a> </li>
+                    <li class="list-group-item"> <i class="fas fa-child"></i> <a href=""> Consumer Electronics </a> </li>
+                </ul>
+            </div>
+
+            <div class="col-md-9">
+                <div id="carouselId" class="carousel slide mt-3" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselId" data-slide-to="1"></li>
+                        <li data-target="#carouselId" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="img-fluid" src="images/banner3.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="images/banner4.jpg" alt="Second slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
                     </a>
-    
-                    <div class="collapse navbar-collapse" id="collapsibleNavId">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
-                            </li>
-    
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
-    
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Products</a>
-                            </li>
-    
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contacts</a>
-                            </li>
-                        </ul>
-                    
-                        <ul class="navbar-nav ml-auto">
-                            <li>
-                                <a href="#"> <i class="fa fa-search mr-3"></i> </a>
-                            </li>
-    
-                            <li>
-                                <a href="#"> <i class="fa fa-user mr-3"></i> </a>
-                            </li>
-    
-                            <li>
-                                <a href="#"> <i class="fas fa-shopping-cart mr-3"></i> </a>
-                            </li>
-                        </ul>
-                    </div>
-    
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId">
-                            <i class="fas fa-bars"></i>
-                    </button>
-                </nav>
-
-                <div class="row">
-                    <div class="col-md-3 mt-3">
-                        <ul class="list-group">
-                            <li class="list-group-item active"> <i class="fas fa-bars"></i> CATEGORIES </li>
-                            <li class="list-group-item"> <i class="fa fa-user"></i> <a href=""> Mens Fashion </a> </li>
-                            <li class="list-group-item"> <i class="fas fa-child"></i> <a href=""> Computer & Office </a> </li>
-                            <li class="list-group-item"> <i class="fas fa-plug"></i> <a href=""> Auto Mobiles </a> </li>
-                            <li class="list-group-item"> <i class="fas fa-gem"></i> <a href=""> Jewelry & Watches </a> </li>
-                            <li class="list-group-item"> <i class="fas fa-child"></i> <a href=""> Consumer Electronics </a> </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-9">
-                       <div id="carouselId" class="carousel slide mt-3" data-ride="carousel">
-                           <ol class="carousel-indicators">
-                               <li data-target="#carouselId" data-slide-to="0" class="active"></li>
-                               <li data-target="#carouselId" data-slide-to="1"></li>
-                               <li data-target="#carouselId" data-slide-to="2"></li>
-                           </ol>
-                           <div class="carousel-inner" role="listbox">
-                               <div class="carousel-item active">
-                                   <img class="img-fluid" src="images/banner3.jpg" alt="First slide">
-                               </div>
-                               <div class="carousel-item">
-                                   <img class="img-fluid" src="images/banner4.jpg" alt="Second slide">
-                               </div>
-                           </div>
-                           <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
-                               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                               <span class="sr-only">Previous</span>
-                           </a>
-                           <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
-                               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                               <span class="sr-only">Next</span>
-                           </a>
-                       </div>
-                    </div>
+                    <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-
-                <div class="row">
-                    <div class="col-md-6">
-                        <img class="img-fluid mt-3" src="images/slide1.jpg">
-                    </div>
-                    
-                    <div class="col-md-6">
-                        <img class="img-fluid mt-3" src="images/slide2.jpg">
-                    </div>
-                </div>
-
-                <div class="row mt-5">
-                    <div class="col-md-12">
-                        <h3 class="text-center"> Best Products </h3>
-                    </div>
-                </div>
-
-                <div class="row mt-5">
-                    <div class="col-md-3">
-                        <div class="jumbotron">
-                            <img class="img-fluid" src="images/img1.png">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="jumbotron">
-                            <img class="img-fluid" src="images/img2.png">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="jumbotron">
-                            <img class="img-fluid" src="images/img3.png">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="jumbotron">
-                            <img class="img-fluid" src="images/img4.png">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="jumbotron">
-                            <img class="img-fluid" src="images/img5.png">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="jumbotron">
-                            <img class="img-fluid" src="images/img6.png">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="jumbotron">
-                            <img class="img-fluid" src="images/img7.png">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="jumbotron">
-                            <img class="img-fluid" src="images/img8.png">
-                        </div>
-                    </div>
-
-                    <div class=s
-            
+            </div>
         </div>
-    </body>
+
+        <div class="row">
+            <div class="col-md-6">
+                <img class="img-fluid mt-3" src="images/slide1.jpg">
+            </div>
+
+            <div class="col-md-6">
+                <img class="img-fluid mt-3" src="images/slide2.jpg">
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h3 class="text-center"> Best Products </h3>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-3">
+                <div class="jumbotron">
+                    <img class="img-fluid" src="images/img1.png">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="jumbotron">
+                    <img class="img-fluid" src="images/img2.png">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="jumbotron">
+                    <img class="img-fluid" src="images/img3.png">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="jumbotron">
+                    <img class="img-fluid" src="images/img4.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="jumbotron">
+                    <img class="img-fluid" src="images/img5.png">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="jumbotron">
+                    <img class="img-fluid" src="images/img6.png">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="jumbotron">
+                    <img class="img-fluid" src="images/img7.png">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="jumbotron">
+                    <img class="img-fluid" src="images/img8.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="row jumbotron">
+            <div class="col-md-3">
+                <img class="img-fluid" src="images/logo.png">
+                <address class="mt-3">
+                    <i class="fas fa-map-marker-alt"></i> No.10 West Masi street, <br> Madurai <br>
+                    <i class="fas fa-envelope mt-3"></i> info@examp.com <br>
+                    <i class="fas fa-phone-volume mt-3"></i> +91 97906 94891 <br>
+                    <i class="fab fa-facebook mt-3 mr-3"></i> <i class="fab fa-twitter-square mt-3 mr-3"></i> <i class="fab fa-linkedin mt-3 mr-3"></i> <i class="fab fa-google-plus mt-3 mr-3"></i>
+                </address>
+            </div>
+            <div class="col-md-3">
+                <h3> CATEGORIES </h3> 
+                <i class="fa fa-user l1"></i><a href=""> Mens Fashion </a><br>
+                <i class="fas fa-child l1"></i><a href=""> Computer & Office </a><br>
+                <i class="fas fa-plug l1"></i><a href=""> Auto Mobiles </a><br>
+                <i class="fas fa-gem l1"></i><a href=""> Jewelry & Watches </a><br>
+                <i class="fas fa-child l1"></i><a href=""> Consumer Electronics </a><br>
+            </div>
+            <div class="col-md-6">
+                <div class="map-responsive mt-3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31105.761865632758!2d77.67649369817207!3d12.9577546883378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13b4551d0957%3A0x597894d77e1e4919!2sMarathahalli%2C+Bengaluru%2C+Karnataka!5e0!3m2!1sen!2sin!4v1561101160336!5m2!1sen!2sin" width="400" height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe>  
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-n3">
+            <div class="col-md-6">
+                © 2019 Your Website Name All Right Reserved
+            </div>
+            <div class="col-md-6 l1">
+                <nav class="navbar navbar-expand-lg mt-n3">
+                    <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html"> Home</a>
+                            </li>
+        
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> About</a>
+                            </li>
+        
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> Products</a>
+                            </li>
+        
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> Contacts</a>
+                            </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+</body>
+
 </html>
