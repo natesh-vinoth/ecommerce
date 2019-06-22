@@ -2,7 +2,7 @@
 {
     margin-top: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    height: 1980px; 
+    height: 1900px; 
     background-color: white;
 }
 .navbar a
@@ -16,7 +16,7 @@
 body
 {
     background-image: url("images/background.jpg");
-    height: 1995px
+    height: 1925px
 }
 .map-responsive{
     overflow:hidden;
@@ -33,18 +33,16 @@ body
 }
 
 
-
-
 @media screen and (max-width : 600px)
 {
     body
     {
-        height: 4710px;
+        height: 4630px;
     }
     .container
     {
         width: 400px;
-        height: 4680px;
+        height: 4600px;
     }
     .l1
     {
